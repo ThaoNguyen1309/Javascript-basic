@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="view-port" content="width-device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatiple" content="ie-edge">
+        <title>Javascript basic</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        
+    </head>
+    <body>
+        <input type="number" id="num1"> + 
+        <input type="number" id="num2">
+        <button id="btn">Tính</button>
+        <p>Kết quả: <span id="result"></span></p>
+        <script>
+            var number1 = document.getElementById("num1")
+            var number2 = document.getElementById("num2")
+            var button = document.getElementById("btn")
+            button.addEventListener("click", tinhTong)
+            function tinhTong(){
+                var sum = parseInt(number1.value) + parseInt(number2.value)
+                var Kq = document.getElementById("result")
+                Kq.innerHTML = (sum)
+            }
+            button.addEventListener("click", tinhTong)
+        </script>
+    </body>
+</html>
